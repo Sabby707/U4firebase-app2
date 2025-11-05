@@ -100,7 +100,8 @@ function Post() {
 
       <ul className="space-y-3">
             {post.map((m) => {
-              const enEdicion = editId === m.id;
+              //funcion que comprueba que editId fue cargado
+              const enEdicion = (editId === m.id);
               return (
                 <li
                   key={m.id}

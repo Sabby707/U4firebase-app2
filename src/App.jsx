@@ -8,7 +8,8 @@ import { Inicio } from "./paginas/incio";
 function App() {
   return (
     <>
-        <Navbar />
+    
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Inicio />} />
