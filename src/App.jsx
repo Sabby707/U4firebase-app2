@@ -4,11 +4,12 @@ import Post from "./paginas/post";
 import { Usuario } from "./paginas/Usuario";
 import { Productos } from "./paginas/productos";
 import { Inicio } from "./paginas/incio";
+import Registro from "./componentes/Registro";
+import Login from "./componentes/Login";
 
 function App() {
   return (
     <>
-    
       <Navbar />
 
       <Routes>
@@ -16,9 +17,10 @@ function App() {
         <Route path="/usuarios" element={<Usuario />} />
         <Route path="/post" element={<Post />} />
         <Route path="/productos" element={<Productos />} />
+        <Route path="/registro" element={<Registro />} /> {/* 👈 nueva ruta */}
+        <Route path="/login" element={<Login />} /> {/* 👈 opcional */}
       </Routes>
     </>
-      
   );
 }
 
