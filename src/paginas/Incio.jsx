@@ -34,7 +34,7 @@ export function Inicio() {
         </div>
 
         {/* Tarjetas informativas */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
           <div className="bg-indigo-100 p-4 rounded-2xl shadow-sm border border-indigo-200">
             <h3 className="text-indigo-600 font-semibold text-lg">Usuarios</h3>
             <p className="text-gray-700 text-sm">Administra nuevos y existentes con facilidad.</p>

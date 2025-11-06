@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-import { getAuth } from "firebase/auth"; // 👈 agrega esto
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Configuración de tu app Firebase
 const firebaseConfig = {
@@ -16,10 +16,11 @@ const firebaseConfig = {
 
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
-
-// Exportar los servicios que usarás
-export const db = getFirestore(app);
-export const storage = getStorage(app);
-export const auth = getAuth(app); // 👈 agrega esta línea también
-
-console.log("✅ Storage bucket:", import.meta.env.VITE_FIREBASE_STORAGE_BUCKET);
+//Inicializar servicio de FireStore
+export const db = getFirestore(app)
+//Inicializar Storage
+export const storage = getStorage(app)
+//Inicializar Auth
+export const auth = getAuth(app)
+// Provider para login con Google (opcional)
+export const googleProvider = new GoogleAuthProvider();
